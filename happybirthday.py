@@ -6,7 +6,7 @@ unlock_time = datetime.datetime(2025,2,3,0,0)
 current_time = datetime.datetime.now()
 
 
-if current_time<unlock_time:
+while current_time<unlock_time:
     remaining_time = unlock_time-current_time
     st.warning("This Page is locked until i say so 😎")
 
