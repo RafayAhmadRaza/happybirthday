@@ -17,7 +17,7 @@ if current_time<unlock_time:
     st.write(f"⏳ Time remaining: {int(days)}d {int(hours)}h {int(minutes)}m {int(seconds)}s")
   
     time.sleep(1)
-    st.experimental_rerun()
+
 st.title("🎉 Happy Birthday! Rameesa! 🎂")
 
 st.image("https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif")
