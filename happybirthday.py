@@ -7,6 +7,7 @@ current_time = datetime.datetime.now()
 
 
 while current_time<unlock_time:
+    st.session_state.clear()  
     
     remaining_time = unlock_time-current_time
     st.warning("This Page is locked until i say so 😎")
@@ -18,7 +19,6 @@ while current_time<unlock_time:
     st.write(f"⏳ Time remaining: {int(days)}d {int(hours)}h {int(minutes)}m {int(seconds)}s")
   
     time.sleep(1)
-    st.session_state.clear()  
     current_time = datetime.datetime.now()
 
 
